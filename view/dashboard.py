@@ -2,13 +2,11 @@
 import tkinter as tk
 from tkinter import messagebox
 from datetime import datetime
-
 from view.student_view import StudentView
 from view.teacher_view import TeacherView
 from view.course_view import CourseView
 from view.department_view import DepartmentView
 from view.subject_view import SubjectView
-from view.user_view import UserView
 from view.fee_view import FeeView
 from view.attendance_view import AttendanceView
 
@@ -79,7 +77,7 @@ class Dashboard:
             # Row 2
             ("Student", "#27ae60", self.open_student),
             ("Teacher", "#2980b9", self.open_teacher),
-            ("Users", "#7f8c8d", self.open_user),
+            
 
             # Row 3
             ("Attendance", "#c0392b", self.open_attendance),
@@ -151,8 +149,7 @@ class Dashboard:
     def open_subject(self):
         SubjectView()
 
-    def open_user(self):
-        UserView()
+    
 
     def open_fee(self):
         FeeView()
